@@ -1,0 +1,13 @@
+# file gcc11.opts
+CMAKE_FLAGS=" \
+   -DCMAKE_BUILD_TYPE=Release \
+   -DCMAKE_CXX_COMPILER=g++ \
+   -DCMAKE_C_COMPILER=gcc \
+   -DCMAKE_CXX_STANDARD=20 \
+   -DCMAKE_CXX_FLAGS=\"-march=native\" \
+   -DCMAKE_BUILD_PARALLEL_LEVEL=4 \
+   -Dnanoflann_SOURCE_DIR:PATH=/home/leeloos/dune-test/dune-meshdist/libs/nanoflann-1.6.2 \
+   -Dalglib_SOURCE_DIR:PATH=/home/leeloos/dune-test/dune-meshdist/libs/alglib-cpp \
+   -DDUNE_ENABLE_PYTHONBINDINGS:BOOL=0"
+BUILDDIR="build/gcc11"
+MAKE_FLAGS="-j4"
