@@ -1,0 +1,750 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_506c9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_506c9.dir/build.make CMakeFiles/cmTC_506c9.dir/build
+gmake[1]: Entering directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_506c9.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE -o CMakeFiles/cmTC_506c9.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_506c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_506c9.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_506c9.dir/CheckFunctionExists.c.o -o cmTC_506c9 
+/usr/bin/ld: CMakeFiles/cmTC_506c9.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_506c9.dir/build.make:99: cmTC_506c9] Error 1
+gmake[1]: Leaving directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_506c9/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f2901/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f2901.dir/build.make CMakeFiles/cmTC_f2901.dir/build
+gmake[1]: Entering directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2901.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_f2901.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f2901
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2901.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_f2901.dir/CheckFunctionExists.c.o -o cmTC_f2901  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_f2901.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_f2901.dir/build.make:102: cmTC_f2901] Error 1
+gmake[1]: Leaving directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f2901/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a08da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a08da.dir/build.make CMakeFiles/cmTC_a08da.dir/build
+gmake[1]: Entering directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a08da.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_a08da.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a08da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a08da.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_a08da.dir/CheckFunctionExists.c.o -o cmTC_a08da  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+gcc: error: unrecognized command-line option ‘-fortranlibs’
+gmake[1]: *** [CMakeFiles/cmTC_a08da.dir/build.make:103: cmTC_a08da] Error 1
+gmake[1]: Leaving directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a08da/fast] Error 2
+
+
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determining if files sion.h exist failed with the following output:
+Change Dir: /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3919/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3919.dir/build.make CMakeFiles/cmTC_a3919.dir/build
+gmake[1]: Entering directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3919.dir/SIONLIB_HEADER_USABLE.c.o
+/usr/bin/gcc   -fPIE     -DENABLE_SIONLIB -o CMakeFiles/cmTC_a3919.dir/SIONLIB_HEADER_USABLE.c.o -c /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CheckIncludeFiles/SIONLIB_HEADER_USABLE.c
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CheckIncludeFiles/SIONLIB_HEADER_USABLE.c:2:10: fatal error: sion.h: No such file or directory
+    2 | #include <sion.h>
+      |          ^~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a3919.dir/build.make:78: CMakeFiles/cmTC_a3919.dir/SIONLIB_HEADER_USABLE.c.o] Error 1
+gmake[1]: Leaving directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a3919/fast] Error 2
+
+
+Source:
+/* */
+#include <sion.h>
+
+
+int main(void){return 0;}
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Performing C++ SOURCE FILE Test DUNE_CV_PTHREAD_TLS_COMPILES failed with the following output:
+Change Dir: /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8df8a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8df8a.dir/build.make CMakeFiles/cmTC_8df8a.dir/build
+gmake[1]: Entering directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8df8a.dir/src.cxx.o
+/usr/bin/g++ -DDUNE_CV_PTHREAD_TLS_COMPILES  -march=native   -fPIE -std=gnu++20 -o CMakeFiles/cmTC_8df8a.dir/src.cxx.o -c /home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+    1 | include <pthread.h>
+      |          ^~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:10: error: ‘pthread’ was not declared in this scope
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:1:1: error: ‘include’ does not name a type
+    1 | include <pthread.h>
+      | ^~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:7:42: error: ‘maxThreads’ was not declared in this scope
+    7 |                 static int threadnumber[ maxThreads ];
+      |                                          ^~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:8:17: error: ‘pthread_barrier_t’ does not name a type
+    8 |                 pthread_barrier_t barrier;
+      |                 ^~~~~~~~~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx: In function ‘void* setThreadNumber(void*)’:
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:13:19: error: ‘threadnumber’ was not declared in this scope; did you mean ‘threadNumber’?
+   13 |                   threadnumber[ num ] = threadNumber ();
+      |                   ^~~~~~~~~~~~
+      |                   threadNumber
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:14:42: error: ‘barrier’ was not declared in this scope
+   14 |                   pthread_barrier_wait( &barrier );
+      |                                          ^~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:14:19: error: ‘pthread_barrier_wait’ was not declared in this scope
+   14 |                   pthread_barrier_wait( &barrier );
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:18:19: error: ‘pthread_t’ was not declared in this scope
+   18 |                   pthread_t thread[ maxThreads ];
+      |                   ^~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:19:28: error: ‘maxThreads’ was not declared in this scope
+   19 |                   int num[ maxThreads ];
+      |                            ^~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:22:21: error: ‘num’ was not declared in this scope; did you mean ‘enum’?
+   22 |                     num[ i ] = i;
+      |                     ^~~
+      |                     enum
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:23:21: error: ‘threadnumber’ was not declared in this scope; did you mean ‘threadNumber’?
+   23 |                     threadnumber[ i ] = -1;
+      |                     ^~~~~~~~~~~~
+      |                     threadNumber
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:25:42: error: ‘barrier’ was not declared in this scope
+   25 |                   pthread_barrier_init( &barrier, 0, maxThreads );
+      |                                          ^~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:25:19: error: ‘pthread_barrier_init’ was not declared in this scope
+   25 |                   pthread_barrier_init( &barrier, 0, maxThreads );
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:27:38: error: ‘thread’ was not declared in this scope
+   27 |                     pthread_create (&thread[ i ], 0, &setThreadNumber, (void *) &num[ i ]);
+      |                                      ^~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:27:82: error: ‘num’ was not declared in this scope; did you mean ‘enum’?
+   27 |                     pthread_create (&thread[ i ], 0, &setThreadNumber, (void *) &num[ i ]);
+      |                                                                                  ^~~
+      |                                                                                  enum
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:27:21: error: ‘pthread_create’ was not declared in this scope
+   27 |                     pthread_create (&thread[ i ], 0, &setThreadNumber, (void *) &num[ i ]);
+      |                     ^~~~~~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:30:35: error: ‘thread’ was not declared in this scope
+   30 |                     pthread_join (thread[ i ], 0);
+      |                                   ^~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:30:21: error: ‘pthread_join’ was not declared in this scope
+   30 |                     pthread_join (thread[ i ], 0);
+      |                     ^~~~~~~~~~~~
+/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp/src.cxx:33:25: error: ‘threadnumber’ was not declared in this scope; did you mean ‘threadNumber’?
+   33 |                     if( threadnumber[ i ] != i ) result = 1;
+      |                         ^~~~~~~~~~~~
+      |                         threadNumber
+gmake[1]: *** [CMakeFiles/cmTC_8df8a.dir/build.make:78: CMakeFiles/cmTC_8df8a.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/leeloos/dune-test/higher-order-bgn/build/gcc11/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8df8a/fast] Error 2
+
+
+Source file was:
+include <pthread.h>
+                static const int maxThreads = 2 ;
+                static int& threadNumber () {
+                    static __thread int tn;
+                    return tn;
+                }
+                static int threadnumber[ maxThreads ];
+                pthread_barrier_t barrier;
+                static void* setThreadNumber(void *number) {
+                  const int num = *((int*) number);
+                  threadNumber () = num ;
+                  //sleep (1);
+                  threadnumber[ num ] = threadNumber ();
+                  pthread_barrier_wait( &barrier );
+                  return 0;
+                }
+                int main () {
+                  pthread_t thread[ maxThreads ];
+                  int num[ maxThreads ];
+                  for (int i=0; i<maxThreads; ++i )
+                  {
+                    num[ i ] = i;
+                    threadnumber[ i ] = -1;
+                  }
+                  pthread_barrier_init( &barrier, 0, maxThreads );
+                  for( int i=0; i<maxThreads; ++ i)
+                    pthread_create (&thread[ i ], 0, &setThreadNumber, (void *) &num[ i ]);
+
+                  for( int i=0; i<maxThreads; ++ i)
+                    pthread_join (thread[ i ], 0);
+                  int result = 0;
+                  for( int i=0; i<maxThreads; ++i )
+                    if( threadnumber[ i ] != i ) result = 1;
+                  return result;
+                }
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+
+Determining location of ARPACK++ failed:
+Include directory: 
+Libraries to link against: 
+
+Determing location of SIONLIB failed:
+Include directory: 
+Library directory: 
+

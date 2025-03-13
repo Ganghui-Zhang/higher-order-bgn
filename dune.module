@@ -1,0 +1,12 @@
+################################
+# Dune module information file #
+################################
+
+# Name of the module
+Module: higher-order-bgn
+Version: 0.1
+Maintainer: gh-zhang19@mails.tsinghua.edu.cn
+# Required build dependencies
+Depends: dune-curvedgrid dune-meshdist dune-gmsh4 dune-vtk dune-alugrid dune-foamgrid
+# Optional build dependencies
+#Suggests:

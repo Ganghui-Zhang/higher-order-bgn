@@ -1,0 +1,35 @@
+#!/usr/bin/bash
+# SPDX-FileCopyrightInfo: Copyright © DUNE Project contributors, see file LICENSE.md in module root
+# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception
+
+
+# setup with Dune-configured venv
+if [ -f "/home/leeloos/dune-test/dune-common/build/gcc11/dune-env/bin/activate" ]; then
+  source /home/leeloos/dune-test/dune-common/build/gcc11/dune-env/bin/activate
+
+  # test if build directory matches installed dune python packages
+  python -m dune checkbuilddirs higher-order-bgn /home/leeloos/dune-test/higher-order-bgn/build/gcc11
+
+# setup with some other active venv
+# requires to install the correct dune python packages into this
+# venv before using this script
+elif [ -n "$VIRTUAL_ENV" ]; then
+  # test if build directory matches installed dune python packages
+  python -m dune checkbuilddirs higher-order-bgn /home/leeloos/dune-test/higher-order-bgn/build/gcc11
+
+# setup without venv and set-dune-pythonpath script available
+elif [ -f "/home/leeloos/dune-test/higher-order-bgn/build/gcc11/set-dune-pythonpath" ]; then
+  source /home/leeloos/dune-test/higher-order-bgn/build/gcc11/set-dune-pythonpath
+
+else
+  echo "Dune internal virtual environment not found:"
+  echo "No activate script in /home/leeloos/dune-test/dune-common/build/gcc11/dune-env/bin"
+  exit 77
+fi
+
+if [ $? -eq 0 ] ; then
+  "$@"
+else
+  echo "Dune python package could not be found."
+  exit 77
+fi
