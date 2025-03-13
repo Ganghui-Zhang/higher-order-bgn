@@ -1,53 +1,32 @@
-Preparing the Sources
-=========================
+General requirements:
+======================================
+- C++ compiler supporting the C++17 language standard, e.g. g++ >= 7 or clang >= 5
+- CMake >= 3.13
+- SuiteSparse / UMFPack
 
-Additional to the software mentioned in README you'll need the
-following programs installed on your system:
+Getting all Dune dependencies
+-----------------------------
+The code depends on several dune modules, publicly available
+- [dune-common](https://gitlab.dune-project.org/core/dune-common.git)
+- [dune-geometry](https://gitlab.dune-project.org/core/dune-geometry.git)
+- [dune-grid](https://gitlab.dune-project.org/core/dune-grid.git)
+- [dune-istl](https://gitlab.dune-project.org/core/dune-istl.git)
+- [dune-localfunctions](https://gitlab.dune-project.org/core/dune-localfunctions.git)
+- [dune-functions](https://gitlab.dune-project.org/staging/dune-functions.git)
+- [dune-typetree](https://gitlab.dune-project.org/staging/dune-typetree.git)
+- [dune-uggrid](https://gitlab.dune-project.org/staging/dune-uggrid.git)
+- [dune-foamgrid](https://gitlab.dune-project.org/extensions/dune-foamgrid.git)
+- [dune-curvedgeometry](https://gitlab.mn.tu-dresden.de/iwr/dune-curvedgeometry.git)
+- [dune-curvedgrid](https://gitlab.mn.tu-dresden.de/iwr/dune-curvedgrid.git)
+- [dune-gmsh4](https://gitlab.mn.tu-dresden.de/iwr/dune-gmsh4.git)
+- [dune-vtk](https://gitlab.mn.tu-dresden.de/iwr/dune-vtk.git)
 
-  cmake >= 3.16
+And on the *new* dune modules introduced in the manuscript:
+- [dune-meshdist](https://gitlab.dune-project.org/extentsions/dune-meshdist)
 
-Getting started
----------------
+Download all modules in a common root directory, called `DUNE_TEST`, change to that directory
+and run the command `dunecontrol` to configure and build all dependencies:
 
-If these preliminaries are met, you should run
-
-  dunecontrol all
-
-which will find all installed dune modules as well as all dune modules
-(not installed) which sources reside in a subdirectory of the current
-directory. Note that if dune is not installed properly you will either
-have to add the directory where the dunecontrol script resides (probably
-./dune-common/bin) to your path or specify the relative path of the script.
-
-Most probably you'll have to provide additional information to dunecontrol
-(e. g. compilers, configure options) and/or make options.
-
-The most convenient way is to use options files in this case. The files
-define four variables:
-
-CMAKE_FLAGS      flags passed to cmake (during configure)
-
-An example options file might look like this:
-
-#use this options to configure and make if no other options are given
-CMAKE_FLAGS=" \
--DCMAKE_CXX_COMPILER=g++-14 \
--DCMAKE_CXX_FLAGS='-Wall -pedantic' \
--DCMAKE_INSTALL_PREFIX=/install/path" #Force g++-14 and set compiler flags
-
-If you save this information into example.opts you can pass the opts file to
-dunecontrol via the --opts option, e. g.
-
-  dunecontrol --opts=example.opts all
-
-More info
----------
-
-See
-
-     dunecontrol --help
-
-for further options.
-
-
-The full build system is described in the dune-common/doc/buildsystem (Git version) or under share/doc/dune-common/buildsystem if you installed DUNE!
+```
+./dune-common/bin/dunecontrol all
+```
