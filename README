@@ -51,8 +51,8 @@ Explicit numerical tests (Need to adjust the local assembler matrix)
   Complie higher-order-bgn_curve_cc and Curve.hh
 - The evolution test for mean curvature flow and surface diffusion of surface:
   Complie higher-order-bgn_surface_cc and Surface.hh
-- The evolution test for surface diffusion of curve:
+- The structure-preserving evolution test for surface diffusion of curve:
   Complie higher-order-bgn_curve_cc and Curve_SP.hh
-- The evolution test for surface diffusion of surface:
+- The structure-preserving evolution test for surface diffusion of surface:
   Complie higher-order-bgn_surface_cc and Surface_SP.hh
 
