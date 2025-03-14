@@ -1,7 +1,7 @@
 General requirements:
 ======================================
-- C++ compiler supporting the C++17 language standard, e.g. g++ >= 7 or clang >= 5
-- CMake >= 3.13
+- C++ compiler supporting the C++20 language standard, e.g. g++ >= 10 or clang >= 13
+- CMake >= 3.16
 - SuiteSparse / UMFPack
 
 Getting all Dune dependencies:
@@ -30,28 +30,25 @@ and run the command `dunecontrol` to configure and build all dependencies:
 
 ./dune-common/bin/dunecontrol all
 
-Compiling the numerical tests using the gcc11.opts file
+Compiling the numerical tests
 ======================================
-./dune-common/bin/dunecontrol --opts=gcc11.opts --only=higher-order-bgn all
+./dune-common/bin/dunecontrol --only=higher-order-bgn all
 
 Running the numerical tests
 ======================================
-When build with cmake, all numerical tests executables are placed in the directory `build/gcc11/src`.
+When build with cmake, all numerical tests executables are placed in the directory `build/src`.
 Thus, in order to run a numerical tests `<example>`, simply call
 
-./build/gcc11/src/example
+./build/src/example
 
 Explicit numerical tests (Need to adjust the local assembler matrix)
 ======================================
-- The experiment order of convergence for mean curvature flow:
-  Complie eoc_curve_test_ref.cc and eoc_test.hh 
-- The experiment order of convergence for surface diffusion:
-  Complie eoc_curve_test.cc and eoc_test.hh
-- The evolution test for mean curvature flow and surface diffusion of curve:
-  Complie higher-order-bgn_curve_cc and Curve.hh
-- The evolution test for mean curvature flow and surface diffusion of surface:
-  Complie higher-order-bgn_surface_cc and Surface.hh
-- The structure-preserving evolution test for surface diffusion of curve:
-  Complie higher-order-bgn_curve_cc and Curve_SP.hh
-- The structure-preserving evolution test for surface diffusion of surface:
-  Complie higher-order-bgn_surface_cc and Surface_SP.hh
+- The experiment order of convergence for curves:
+  ./build/src/eoc_curve_test
+- The experiment order of convergence for surfaces:
+  ./build/src/eoc_surface_test
+- The evolution test for curves:
+  ./build/src/higher-order-bgn_curve
+- The evolution test for surfaces:
+  ./build/src/higher-order-bgn_surface
+
